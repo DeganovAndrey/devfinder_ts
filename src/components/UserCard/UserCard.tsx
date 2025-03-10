@@ -1,8 +1,18 @@
 import { FC } from "react";
 import styles from "./UserCard.module.scss";
+import { UserStat } from "components/UserStat";
+import { LocalGithubUser } from "types";
 
-interface UserCardProps {}
+interface UserCardProps extends LocalGithubUser {}
 
-export const UserCard: FC<UserCardProps> = () => {
-  return <div className={styles.user}>User Card</div>;
+export const UserCard: FC<UserCardProps> = (props) => {
+  return (
+    <div className={styles.userCard}>
+      <UserStat
+        repos={props.repos}
+        followers={props.followers}
+        following={props.following}
+      />
+    </div>
+  );
 };
