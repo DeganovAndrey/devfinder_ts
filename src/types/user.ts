@@ -1,9 +1,9 @@
-export type LocalGithubUser = {
+export type LocalGitHubUser = {
   login: string;
-  id: number;
   avatar: string;
   name: string;
   company: string;
+  location: string;
   blog: string;
   bio: string;
   twitter: string;
@@ -19,6 +19,7 @@ export type GitHubUser = {
   avatar_url: string;
   name: string;
   company: string;
+  location: string;
   blog: string;
   bio: string;
   twitter_username: string;
@@ -28,7 +29,7 @@ export type GitHubUser = {
   created_at: string;
 };
 
-export type GithubError = {
+export type GitHubError = {
   message: string;
   documentation_url: string;
 };

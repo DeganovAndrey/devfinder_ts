@@ -1,9 +1,9 @@
 import { FC } from "react";
 import styles from "./UserStat.module.scss";
-import { LocalGithubUser } from "types";
+import { LocalGitHubUser } from "types";
 
 export interface UserStatProps
-  extends Pick<LocalGithubUser, "repos" | "followers" | "following"> {}
+  extends Pick<LocalGitHubUser, "repos" | "followers" | "following"> {}
 
 export const UserStat: FC<UserStatProps> = ({
   repos,

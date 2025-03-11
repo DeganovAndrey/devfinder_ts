@@ -1,10 +1,10 @@
-import { GitHubUser, LocalGithubUser } from "types";
+import { LocalGitHubUser } from "types";
 
-export const defaultUSer: LocalGithubUser = {
-  login: "michey85",
-  id: 36237995,
+export const defaultUSer: LocalGitHubUser = {
+  login: "deganov_andrey",
   avatar: "https://avatars.githubusercontent.com/u/36237995?v=4",
   name: "Andrey Deganov",
+  location: "Malaga",
   company: "Google",
   blog: "degan.com",
   bio: "React developer",
